@@ -20,15 +20,6 @@ describe(`gatsby-theme-cara`, () => {
       /A collection of short, but useful quick tips shared by me and the community about Gatsby. From GraphQL over local development to deployment./i
     )
   })
-  it(`should render project cards with links`, () => {
-    cy.findByText(/tips & tricks for gatsby/i)
-      .parent()
-      .should(
-        `have.attr`,
-        `href`,
-        `https://www.lekoarts.de/gatsby/tips-and-tricks-for-gatsby?utm_source=cara&utm_medium=Theme`
-      )
-  })
   it(`should render about content`, () => {
     cy.findByText(/winky face./i)
   })
@@ -54,6 +45,6 @@ describe(`gatsby-theme-cara`, () => {
   })
   it(`should render the footer`, () => {
     cy.findByLabelText(`Link to the theme's GitHub repository`).contains(`Theme`)
-    cy.findByLabelText(`Link to the theme author's website`).contains(`LekoArts`)
+    cy.findByLabelText(`Link to the theme author's website`).contains(`Antero`)
   })
 })

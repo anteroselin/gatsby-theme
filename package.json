@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "@lekoarts/gatsby-themes",
+  "name": "@antero/gatsby-theme",
   "description": "My open-source collection of free Gatsby themes",
-  "author": "LekoArts",
+  "author": "Antero",
   "workspaces": [
     "themes/*",
     "examples/*",

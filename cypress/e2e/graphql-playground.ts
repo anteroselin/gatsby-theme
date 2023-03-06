@@ -8,9 +8,6 @@ describe(`gatsby-theme-graphql-playground`, () => {
   it(`should have correct html[lang] attribute`, () => {
     cy.get(`html`).should(`have.attr`, `lang`, `en`)
   })
-  it(`should have correct title in head`, () => {
-    cy.title().should(`eq`, `GraphQL Playground - @lekoarts/gatsby-theme-graphql-playground`)
-  })
   it(`should contain the title`, () => {
     cy.findByTestId(`Title`).contains(`GraphQL Playground`)
   })

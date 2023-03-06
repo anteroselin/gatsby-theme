@@ -39,7 +39,7 @@ describe(`gatsby-theme-jodie`, () => {
   it(`should have existing footer`, () => {
     cy.get(`footer`).within(() => {
       cy.findByText(/jodie/i)
-      cy.findByText(/lekoarts/i)
+      cy.findByText(/antero/i)
     })
   })
   it(`should link to a custom page on index page`, () => {

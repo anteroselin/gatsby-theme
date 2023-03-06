@@ -40,7 +40,7 @@ describe(`gatsby-theme-emma`, () => {
   })
   it(`should render the footer`, () => {
     cy.findByLabelText(`Link to the theme's GitHub repository`).contains(`Theme`)
-    cy.findByLabelText(`Link to the theme author's website`).contains(`LekoArts`)
+    cy.findByLabelText(`Link to the theme author's website`).contains(`Antero`)
   })
   it(`should have item with all information`, () => {
     cy.findByLabelText(/view detail page of hermione granger/i).within(() => {

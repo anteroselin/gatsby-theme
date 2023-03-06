@@ -13,21 +13,11 @@ describe(`gatsby-theme-emilia`, () => {
   })
   it(`should render the name`, () => {
     cy.get(`h1`).within(() => {
-      cy.findByText(/lekoarts/i)
+      cy.findByText(/antero/i)
     })
   })
   it(`should render the location`, () => {
     cy.findByText(/germany/i)
-  })
-  it(`should render the social links in the header`, () => {
-    cy.findByTestId(`social-header`).within(() => {
-      cy.findByText(/Twitter/i).should(`have.attr`, `href`, `https://twitter.com/lekoarts_de`)
-      cy.findByText(/Homepage/i).should(
-        `have.attr`,
-        `href`,
-        `https://www.lekoarts.de?utm_source=emilia&utm_medium=Theme`
-      )
-    })
   })
   it(`should render about me`, () => {
     cy.findByText(/about me/i)
@@ -45,7 +35,7 @@ describe(`gatsby-theme-emilia`, () => {
   })
   it(`should render the theme footer`, () => {
     cy.findByLabelText(`Link to the theme's GitHub repository`).contains(`Theme`)
-    cy.findByLabelText(`Link to the theme author's website`).contains(`LekoArts`)
+    cy.findByLabelText(`Link to the theme author's website`).contains(`Antero`)
   })
   it(`should link and display the project page`, () => {
     cy.findByLabelText(/visit emilia project page/i)

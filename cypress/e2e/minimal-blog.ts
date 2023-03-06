@@ -62,11 +62,6 @@ describe(`gatsby-theme-minimal-blog`, () => {
     cy.findByText(/Tutorial/i)
     cy.title().should(`eq`, `Tags | Minimal Blog`)
   })
-  it(`should have social media links`, () => {
-    cy.get(`header`).within(() => {
-      cy.findByText(/Twitter/i).should(`have.attr`, `href`, `https://twitter.com/lekoarts_de`)
-    })
-  })
   it(`should render the hero`, () => {
     cy.findByText(/I'm passionate about open source & teaching/i)
   })
@@ -75,17 +70,10 @@ describe(`gatsby-theme-minimal-blog`, () => {
     cy.findByText(/With Images/i)
     cy.findByText(/Read all posts/i)
   })
-  it(`should render the bottom part`, () => {
-    cy.findByText(/Projects/i)
-    cy.findByText(/3D Art with Cinema4D/i).should(
-      `have.attr`,
-      `href`,
-      `https://www.lekoarts.de/art/3d?utm_source=minimal-blog&utm_medium=Theme`
-    )
-  })
+
   it(`should render the footer`, () => {
     cy.findByLabelText(`Link to the theme's GitHub repository`).contains(`Theme`)
-    cy.findByLabelText(`Link to the theme author's website`).contains(`LekoArts`)
+    cy.findByLabelText(`Link to the theme author's website`).contains(`Antero`)
   })
   it(`should link to individual blog post`, () => {
     cy.findByText(/Markdown Reference/i)

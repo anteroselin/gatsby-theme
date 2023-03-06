@@ -12,7 +12,7 @@ const prompt = [
   {
     type: `input`,
     name: `starter-name`,
-    message: `Name of the respective starter project (if already existing use the name after "LekoArts/" so "gatsby-starter-x")`,
+    message: `Name of the respective starter project (if already existing use the name after "Antero/" so "gatsby-starter-x")`,
   },
 ]
 
@@ -120,7 +120,7 @@ const themeCoreParentActions = [
   },
   {
     type: `add`,
-    path: `themes/gatsby-theme-{{kebabCase name}}/src/@lekoarts/gatsby-theme-{{kebabCase name}}-core/components/homepage.tsx`,
+    path: `themes/gatsby-theme-{{kebabCase name}}/src/@antero/gatsby-theme-{{kebabCase name}}-core/components/homepage.tsx`,
     templateFile: `plop-templates/theme-core-parent/homepage.tsx.hbs`,
   },
   {
